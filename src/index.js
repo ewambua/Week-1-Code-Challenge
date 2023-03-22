@@ -1,45 +1,51 @@
 // Challenge 1: Student Grade Generator (Toy Problem)
-let grade = 90
 
-function studentGradeGenerator(grade){
+
+
+function studentGradeGenerator(){
+
+    const score = document.getElementById('grade').value
+    const grade = score
     if (grade >= 80  && grade <= 100) {
-        return 'Congrats you got an A'
+        alert('Congrats you got an A')
     } else if(grade >= 60 && grade <= 79){
-        return 'Congrats you got a B'
+        alert('Congrats you got a B')
     } else if(grade >= 50 && grade <= 59){
-        return 'You Got a C'
+        alert('You Got a C')
     } else if(grade >= 40 && grade <= 49){
-        return 'You Got a D'
+        alert('You Got a D')
     } else if(grade < 40){
-        return 'E'
+        alert('You  Got an E')
     }
 }
 
 // Challenge 2: Speed Detector (Toy Problem)
-let speed = 80
 
-function speedDetector(speed, points){
+
+function speedDetector(points){
+    const carSpeed = document.getElementById('speed').value
+    const speed = carSpeed
     if(speed < 70){
-        return 'OK'
+        alert('OK')
     } else if(speed >= 70){
         points = Math.floor(speed - 70) / 5
-        
+        alert(`Demerit Points: ${points}`)
         if(points >= 12){
-            return 'License suspended'
+            alert('License suspended')
         }
     }
-  return `Points: ${points}`
+
 }
 
-// Challenge 3: Net Salary Calculator (Toy Problem)
+// Challenge 3:  (Toy Problem)
 
 function taxPayeeCalculator(salary){
     if(salary <= 24000){
-        return (salary * 0.10)
+        return (salary / 10)
     } else if(salary >= 24001 && salary <= 32,333){
-        return (salary * 0.25)
+        return (salary / 25)
     } else if(salary > 32,333){
-        return (salary * 0.30)
+        return (salary / 30)
     }
 }
 let nhifAmmount = 0
@@ -83,17 +89,19 @@ function calculatorNHIF(salary){
 }
 
 function calculatorNSSF(salary){
-     return (salary * 0.06)
+     return (salary / 6)
 }
 
-function netSalaryCalculator(salary){
+function netSalaryCalculator(){
+    const grossSalary = document.getElementById('salary').value
+    const salary = grossSalary
     tax =  taxPayeeCalculator(salary);
-    
+
     nhif = calculatorNHIF(salary);
     nssf = calculatorNSSF(salary);
-    netSalary = salary - (tax + nhif + nssf)
-      
-    return netSalary
-}  
+    netSalary = salary - Math.floor(tax + nhif + nssf)
+    netAmmount = netSalary.toLocaleString("en-US")
+    alert (`Your net Salary is: ${netAmmount}`)
+}
 
-console.log(netSalaryCalculator(24000))
+

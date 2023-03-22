@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Code Challange</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Week 1 Code Challange</h1>
+    <hr>
+    <!-- Student Grade Generator -->
+    <h2>Student Grade Generator</h2>
+    <form action="#" method="GET" id="form">
+        <input type="text" id="grade" name="grade" placeholder="Enter grade score here"/>
+        <input type="submit" id="submitGrade" value="Display Grade" onclick="studentGradeGenerator(this);"/>
+    </form>
+
+    <!-- Speed Detector -->
+    <h2>Speed Detector</h2>
+    <form action="#" method="GET" id="form">
+        <input type="text" id="speed" name="speed" placeholder="Enter car speed here"/>
+        <input type="submit" id="submitSpeed" value="Display Speed" onclick="speedDetector(this);"/>
+    </form>
+
+    <!-- Net Salary Calculator -->
+    <h2>Net Salary Calculator</h2>
+    <form action="#" method="GET" id="form">
+        <input type="text" id="salary" name="salary" placeholder="Enter gross income here"/>
+        <input type="submit" id="submitSalary" value="Display Net Salary" onclick="netSalaryCalculator(this);"/>
+        <p id="warning">Do not add a comma while inputing gross income</p>
+    </form>
+
+    <script type="text/javascript" src="./src/index.js"></script>
+</body>
+</html>
