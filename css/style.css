@@ -3,8 +3,26 @@ body {
     background: #9794a0;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 #warning{
     color: red;
+}
+
+#submitGrade:hover{
+    background-color: green;
+}
+
+#submitSpeed:hover{
+    background-color: green;
+}
+
+#submitSalary:hover{
+    background-color: green;
+}
+
+input {
+    border-radius: 4px;
+    border: 2px solid black;
 }

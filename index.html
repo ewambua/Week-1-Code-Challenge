@@ -13,23 +13,38 @@
     <!-- Student Grade Generator -->
     <h2>Student Grade Generator</h2>
     <form action="#" method="GET" id="form">
-        <input type="text" id="grade" name="grade" placeholder="Enter grade score here"/>
-        <input type="submit" id="submitGrade" value="Display Grade" onclick="studentGradeGenerator();"/>
+        <div>
+            <input type="text" id="grade" name="grade" placeholder="Enter grade score here"/>
+        </div> <br>
+        <div>
+            <input type="submit" id="submitGrade" value="Display Grade" onclick="studentGradeGenerator();"/>
+        </div>
+
     </form>
 
     <!-- Speed Detector -->
     <h2>Speed Detector</h2>
     <form action="#" method="GET" id="form">
-        <input type="text" id="speed" name="speed" placeholder="Enter car speed here"/>
-        <input type="submit" id="submitSpeed" value="Display Demerit Ponits" onclick="speedDetector();"/>
+        <div>
+            <input type="text" id="speed" name="speed" placeholder="Enter car speed here"/>
+        </div> <br>
+        <div>
+            <input type="submit" id="submitSpeed" value="Display Demerit Ponits" onclick="speedDetector();"/>
+        </div>
     </form>
 
     <!-- Net Salary Calculator -->
     <h2>Net Salary Calculator</h2>
     <form action="#" method="GET" id="form">
-        <input type="text" id="salary" name="salary" placeholder="Enter gross income here"/>
-        <input type="submit" id="submitSalary" value="Display Net Salary" onclick="netSalaryCalculator();"/>
-        <p id="warning">Do not add a comma while inputing gross income</p>
+        <div>
+            <input type="text" id="salary" name="salary" placeholder="Enter gross income here"/>
+        </div> <br>
+
+        <div>
+            <input type="submit" id="submitSalary" value="Display Net Salary" onclick="netSalaryCalculator();"/>
+            <p id="warning">Do not add a comma while inputing gross income</p>
+        </div>
+
     </form>
 
     <script type="text/javascript" src="./src/index.js"></script>
