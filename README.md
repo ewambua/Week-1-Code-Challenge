@@ -47,7 +47,7 @@ D. Authors Info
 
 ### Licence
 
-[MIT License]
+[MIT License](https://github.com/ewambua/Week-1-Code-Challenge/blob/main/LICENSE)
 
 
 ### Authors Info
