@@ -47,8 +47,7 @@ D. Authors Info
 
 ### Licence
 
-
-
+[MIT License]
 
 
 ### Authors Info
